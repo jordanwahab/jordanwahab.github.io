@@ -1,0 +1,308 @@
+html, body, .master-layout{
+    display: flex;
+    margin: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(217, 249, 232);
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: JordanCustom;
+    src: url(/font/Roboto-Medium.ttf);
+}
+
+* {
+    font-family: JordanCustom;
+}
+
+img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.4);
+}
+
+.profile {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin: 10px;
+}
+
+legend {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(1, 60, 34);
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+}
+
+input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input:hover {
+    border-color: lawngreen;
+}
+
+label {
+    display: flex;
+    align-self: flex-start;
+}
+
+button {
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(
+        -30deg,
+        darkcyan 45%,
+        lawngreen 100%
+    );
+    background-size: 200%;
+    border-radius: 8px;
+    background-position: 0%;
+    transition: background-position 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    overflow: hidden;
+}
+
+button:hover {
+    background-position: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.box h1 {
+    font-size: 35px;
+}
+
+header {
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(
+    -30deg,
+    rgb(158, 228, 194) 50%,
+    rgb(1, 60, 34) 100%
+    );
+    background-size: 200%;
+    background-position: 0%;
+    transition: background-position 1s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    overflow: hidden;
+}
+
+header h2 {
+    color: rgb(158, 228, 194);
+    padding-left: 20px;
+    font-size: 26px;
+}
+
+.logo {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: rgb(217, 249, 232);
+    border: 4px solid;
+    border-color: rgb(1, 60, 34);
+    color: rgb(1, 60, 34);
+    margin: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: rgb(1, 60, 34);
+    border: 4px solid;
+    border-color: rgb(217, 249, 232);
+    color: rgb(217, 249, 232);
+    margin: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottomPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px;
+}
+
+.jobSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
+}
+
+.jobSection h1 {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.classes {
+    text-align: left;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.4);
+    align-items: center;
+    margin: 25px;
+}
+
+.box h1 {
+    color: rgb(1, 60, 34);
+}
+
+@media screen and (min-width: 768px) {
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .bottomPage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        margin: 30px;
+    }
+
+
+    .jobSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .classes {
+        text-align: left;
+        width: 95vw;
+    }
+
+    .classes p {
+        font-size: 25px;
+    }
+
+    .topMain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .formDiv {
+        width: 50%;
+    }
+
+}
+
+.welcome {
+    text-align: center;
+}
+
+p, h4, h3 {
+    margin: 15px;
+}
+
+.eduBox {
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(1, 60, 34);
+    text-align: start;
+    color: white;
+    margin: 0;
+}
+
+
+
